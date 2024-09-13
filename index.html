@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mi primera web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b9680af7dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="../mi_primera_web/formulario/formulario.html"
+          ><i class="fa-solid fa-thumbtack"></i
+        ></a>
+        <nav>
+          <ul class="links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#acerca">Acerca de mi</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#trabajos">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="seccion-principal">
+        <section class="seccion-1">
+          <h2>Acerca de mi</h2>
+          <h3>Bienvenido a mi web</h3>
+          <div class="acerca-de">
+            <div class="parrafo-1">
+              <p>
+                Hola soy Milton! Soy Argentino, de la provincia de Rio Negro.
+                Amo la tecnología, tengo conocimientos en electrónica de manera
+                autodidacta y estoy iniciándome como programador. Con la
+                intención de combinar estas ciencias, por hobbie y por la
+                posibilidad de vivir de esto.
+              </p>
+            </div>
+            <div class="acerca-img">
+              <img src="Imagenes/perfil.jpg" alt="Imagen portada" />
+            </div>
+          </div>
+        </section>
+        <section class="seccion-2">
+          <div class="carrousel">
+            <img
+              src="Imagenes/christos-papadopoulos-16aTh_OUyKE-unsplash.jpg"
+              alt="carrousel"
+            />
+          </div>
+        </section>
+        <section class="seccion-3">
+          <h2>Trabajos</h2>
+          <div class="container-trabajos">
+            <div class="card-container">
+              <div class="card">
+                <div class="izquierda">
+                  <img src="Imagenes/imagen 1.jfif" alt="" />
+                </div>
+                <span class="text">imaginemos que soy una card</span>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="centro">
+                  <img src="Imagenes/imagen 2.jfif" alt="" />
+                </div>
+                <span class="text">imaginemos que soy una card</span>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card">
+                <div class="derecha">
+                  <img src="Imagenes/imagen 3.jfif" alt="" />
+                </div>
+                <span class="text">imaginemos que soy una card</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-4">
+          <h2 class="titulo_seccion">Contacto</h2>
+          <div class="form_contenedor">
+            <div class="container-f">
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Enter your example.com email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    pattern=".+@example\.com"
+                    size="30"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <div class="boton">
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="frase-aleatoria">
+        <button id="btn-generar">Generar Frase Aleatoria</button>
+        <footer id="footer">
+          <p id="frase"></p>
+        </footer>
+      </div>
+      
+    </div>
+  </body>
+</html>
